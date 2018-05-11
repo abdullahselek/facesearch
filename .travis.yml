@@ -1,0 +1,14 @@
+language: python
+
+dist: trusty
+sudo: required
+
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+
+# command to install dependencies
+install:
+  - travis_wait 60 ./scripts/linux_opencv_installer.sh
